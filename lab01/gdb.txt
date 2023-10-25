@@ -1,9 +1,10 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+In gdb session (after typing gdb program on prompt)
+1.run [arglist]
+2.break [file:]function/line
+3.next
+4.step
+5.continue
+6.print
+7.display /f expr.
+8.display (after display /f expr ...)
+9.quit
