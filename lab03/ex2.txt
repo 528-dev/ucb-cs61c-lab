@@ -1,0 +1,21 @@
+The register representing the variable k.
+answer:
+    k in reg[t0], k * 4 in reg[t1]
+
+The register representing the variable sum.
+answer:
+    sum in reg[s0]
+
+The registers acting as pointers to the source and dest arrays.
+answer:
+   reg[s1] point to source and reg[s2] point to dest
+
+The assembly code for the loop found in the C code.
+answer:
+    loop and square block
+
+How the pointers are manipulated in the assembly code.
+answer:
+    reg[t3] point to dest[k] and reg[t1] point to source[k]
+    t3 manipulated by reg[s2](dest) adding reg[t1](k * 4)
+    t1 manipulated by reg[s1](source) adding reg[t1](k * 4)

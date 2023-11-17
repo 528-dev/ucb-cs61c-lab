@@ -22,3 +22,17 @@ main:
 
 factorial:
     # YOUR CODE HERE
+    addi t1, x0, 1
+    beq a0, t1, return
+    addi sp, sp, -8
+    sw a0, 0(sp) # return value
+    sw ra, 4(sp) # where to return
+    addi a0, a0, -1
+    jal factorial
+    add t0, x0, a0
+    lw a0, 0(sp)
+    lw ra, 4(sp)
+    addi sp, sp, 8
+    mul a0, a0, t0
+return:
+    ret
